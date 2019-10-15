@@ -25,7 +25,7 @@ class Artist
     unless @@all.select { |artist| artist.name == given_name }
       Artist.new(given_name)
     else
-       @@all.select { |artist| artist.name == given_name }
+       @@all.select { |artist| artist.name == given_name }[0]
     end
   end
   
