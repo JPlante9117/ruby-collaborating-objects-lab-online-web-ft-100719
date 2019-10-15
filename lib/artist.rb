@@ -25,7 +25,7 @@ class Artist
     if @@all.select{|artist| artist.name == given_name}[0]
       @@all.select{|artist| artist.name == given_name}[0]
     else
-       artist = artist.new
+       artist = Artist.new
        artist.name = given_name
        @@all << artist
        artist
