@@ -27,6 +27,8 @@ class Artist
     else
        artist = artist.new
        artist.name = given_name
+       @@all << artist
+       artist
        
     end
   end
