@@ -7,7 +7,8 @@ class MP3Importer
   end
   
   def files
-    Dir.@path["*.mp3"].map
+    file_arr = Dir.glob["*.mp3"]
+    puts file_arr
   end
   
   def import(list_of_files)
