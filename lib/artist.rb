@@ -22,7 +22,9 @@ class Artist
   end
   
   def self.find_or_create_by_name(given_name)
-    if self.name.nil?
+    unless @@all.map do |artists|
+      @name
+    end.include?(given_name)
       Artist.new(given_name)
     else
       @name = given_name
