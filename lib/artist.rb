@@ -25,7 +25,7 @@ class Artist
     if self.name.nil?
       
     else
-      self.name
+      self.name = name
     
   end
   
