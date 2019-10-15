@@ -26,6 +26,7 @@ class Artist
       @@all.select{|artist| artist.name == given_name}[0]
     else
        artist = artist.new
+       artist.name = given_name
        
     end
   end
