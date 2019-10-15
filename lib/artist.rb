@@ -23,10 +23,9 @@ class Artist
   
   def self.find_or_create_by_name(name)
     if self.name.nil?
-      
+      self.name = Artist.new(name)
     else
       self.name = name
-    
   end
   
   def print_songs
