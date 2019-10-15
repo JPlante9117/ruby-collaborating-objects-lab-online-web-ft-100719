@@ -26,7 +26,6 @@ class Artist
       @@all.select{|artist| artist.name == given_name}[0]
     else
        artist = Artist.new(given_name)
-       @@all << artist
        artist
        
     end
