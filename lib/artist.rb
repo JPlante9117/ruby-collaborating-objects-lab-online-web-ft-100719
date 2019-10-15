@@ -24,6 +24,8 @@ class Artist
   def self.find_or_create_by_name(given_name)
     unless @@all.select { |artist| artist.name == given_name }
       Artist.new(given_name)
+    else
+       @@all.select { |artist| artist.name == given_name }
     end
   end
   
