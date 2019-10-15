@@ -19,7 +19,7 @@ class Song
   end
   
   def artist_name=(given_name)
-    if Artist.find_or_create
+    Artist.find_or_create_by_name(given_name)
   end
   
 end
