@@ -18,8 +18,8 @@ class Song
     song = self.new(artist_song_genre[1])
   end
   
-  def artist_name=(name)
-    if self.artist.nil?
+  def artist_name=(given_name)
+    if self.artist.name == given_name
       self.artist = Artist.new(name)
     else
       self.artist.name = name
