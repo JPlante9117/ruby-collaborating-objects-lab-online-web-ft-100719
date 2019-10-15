@@ -7,7 +7,7 @@ class MP3Importer
   end
   
   def files
-    file_arr = Dir["#{path}/*.mp3"]
+    file_arr = Dir["#{path}/*.mp3"].split("/").last
     puts file_arr
   end
   
