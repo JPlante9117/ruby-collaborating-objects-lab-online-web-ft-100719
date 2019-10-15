@@ -4,7 +4,7 @@ class Artist
   
   @@all = []
   
-  def instantiate(name)
+  def initialize(name)
     @name = name
     @@all << self
   end
