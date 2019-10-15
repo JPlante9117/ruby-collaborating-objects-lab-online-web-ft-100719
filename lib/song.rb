@@ -19,9 +19,7 @@ class Song
   end
   
   def artist_name=(given_name)
-    unless self.artist.name == given_name
-      self.artist = Artist.new(given_name)
-    end
+    if Artist.
   end
   
 end
