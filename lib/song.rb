@@ -19,10 +19,8 @@ class Song
   end
   
   def artist_name=(given_name)
-    if self.artist.name == given_name
-      self.artist = Artist.new(name)
-    else
-      self.artist.name = name
+    unless self.artist.name == given_name
+      self.artist = Artist.new(given_name)
     end
   end
   
