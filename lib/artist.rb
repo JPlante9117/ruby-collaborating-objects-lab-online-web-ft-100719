@@ -26,6 +26,8 @@ class Artist
       @name
     end.include?(given_name)
       Artist.new(given_name)
+    else
+      
     end
   end
   
